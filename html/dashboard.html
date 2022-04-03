@@ -23,8 +23,7 @@
         rel="stylesheet" />
 </head>
 
-<body>
-    <!-- header navbar đây và navbar ơ trang detail.html là navbar chưa login. Navbar login ở trang edit-docs.html, create-docs.html, category.html-->
+<body>    
     <div class="header">
         <div class="header-navbar">
             <div class="header-left">
@@ -43,31 +42,50 @@
                         <i class="bi bi-search"></i>
                     </button>
                 </div>
-                <div class="login-box">
-                    <button><a href="./login.html">Login</a></button>
+                <div class="user-box">
+                    <div class="dropdown">
+                        <div class="login-infor-user" data-bs-toggle="dropdown">
+                            <img src="../img/avatar.png" alt="" />
+                            <div class="login-infor-user-name">
+                                <p>Oliver Smith</p>
+                                <h6>Teacher English</h6>
+                            </div>
+                            <p><i class="bi bi-chevron-down"></i></p>
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="./use-detail.html">View Profile</a></li>
+                            <li><a class="dropdown-item" href="./create-docs.html">New Docs</a></li>
+                            <li><a class="dropdown-item" href="./dashboard.html">Dashboard</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="tbody-responsive-navbar">
-                    <button class="btn btn-secondary" id="navbar-item">
-                        <i class="bi bi-list"></i>
-                    </button>
-                    <button class="btn btn-secondary" id="navbar-item-cancel">
-                        <i class="bi bi-list"></i>
-                    </button>
+                    <button class="btn btn-secondary" id="navbar-item"><i class="bi bi-list"></i></button>
+                    <button class="btn btn-secondary" id="navbar-item-cancel"><i class="bi bi-list"></i></button>
                 </div>
             </div>
         </div>
     </div>
     <!-- navbar after responsive -->
     <div id="navbar-item-detail">
+        <div class="login-infor-user" data-bs-toggle="dropdown">
+            <img src="../img/avatar.png" alt="" />
+            <div class="login-infor-user-name">
+                <p>Oliver Smith</p>
+                <h6>Teacher English</h6>
+            </div>
+        </div>
         <ul>
             <li><a href="./home.html">Home</a></li>
             <li><a href="./start-page.html">Startpage</a></li>
             <li><a href="">Follow</a></li>
             <li><a href="">Contact</a></li>
-            <li><a href="./login.html">Login</a></li>
+            <li><a href="./use-detail.html">View Profile</a></li>
+            <li><a href="./create-docs.html">New Docs</a></li>
+            <li><a href="">Logout</a></li>
         </ul>
     </div>
-
     <div class="tbody">
         <!-- sitebar category after responsive: sitebar này bt sẽ ẩn sao khi thu nhỏ trang web mới hiện -->
         <div class="tbody-box-responsive">
