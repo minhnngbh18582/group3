@@ -199,33 +199,37 @@
                                     potenti pellentesque</p>
                                 <h6>August 17, 2020 &emsp; Reply</h6>
                                 <div class="reply-comments">
-                                    <button class="btn-reply" id="btn-reply-see"><i class="bi bi-arrow-return-right"></i> &nbsp; See the
+                                    <button class="btn-reply" id="btn-reply-see"><i
+                                            class="bi bi-arrow-return-right"></i> &nbsp; See the
                                         answer ( 2 )</button>
                                     <div class="reply-comments-detail" id="reply-comments-detail">
-                                        <button class="btn-reply" id="btn-reply-hide"><i class="bi bi-arrow-return-right"></i> &nbsp; Hide
+                                        <button class="btn-reply" id="btn-reply-hide"><i
+                                                class="bi bi-arrow-return-right"></i> &nbsp; Hide
                                             answers</button>
                                         <div class="answers-detail">
                                             <div class="comments-detail">
-                                                <p><span>terrylucas</span> &nbsp; <span>@terrylucas</span> Imperdiet in sit rhoncus, eleifend tellus augue lectus
+                                                <p><span>terrylucas</span> &nbsp; <span>@terrylucas</span> Imperdiet in
+                                                    sit rhoncus, eleifend tellus augue lectus
                                                     potenti pellentesque</p>
                                                 <h6>August 17, 2020 &emsp; Reply</h6>
                                             </div>
                                             <div class="comments-detail">
-                                                <p><span>terrylucas</span> &nbsp; <span>@terrylucas</span> Imperdiet in sit rhoncus, eleifend tellus augue lectus
+                                                <p><span>terrylucas</span> &nbsp; <span>@terrylucas</span> Imperdiet in
+                                                    sit rhoncus, eleifend tellus augue lectus
                                                     potenti pellentesque</p>
                                                 <h6>August 17, 2020 &emsp; Reply</h6>
                                             </div>
-                                        </div>   
+                                        </div>
                                         <script language="javascript">
-                                            document.getElementById("btn-reply-see").onclick = function () {                                                
+                                            document.getElementById("btn-reply-see").onclick = function () {
                                                 document.getElementById("reply-comments-detail").style.display = 'block';
                                                 document.getElementById("btn-reply-see").style.display = 'none';
                                             };
-                                            document.getElementById("btn-reply-hide").onclick = function () {                                                
+                                            document.getElementById("btn-reply-hide").onclick = function () {
                                                 document.getElementById("reply-comments-detail").style.display = 'none';
                                                 document.getElementById("btn-reply-see").style.display = 'block';
                                             };    
-                                        </script>                                     
+                                        </script>
                                     </div>
                                 </div>
                             </div>
@@ -251,10 +255,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="input-comment">
-                        <input type="text" placeholder="Add a comments...">
-                        <button>Post</button>
-                    </div>
+                    <form class="form-comment" action="">                        
+                        <div class="input-comment">
+                            <input type="text" placeholder="Add a comments...">
+                            <button>Post</button>
+                        </div>
+                        <div class="checkbox-comment form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Default checkbox
+                            </label>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

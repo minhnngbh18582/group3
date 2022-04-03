@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body>
+    <canvas id="myChart" width="400" height="400" style="display: block; height: 803px; width: 803px;"></canvas>
+<script>
+var MeSeContext = document.getElementById("myChart").getContext("2d");
+    var MeSeData = {
+        labels: [
+            "ME",
+            "SE"
+        ],
+        datasets: [
+            {
+                label: "Test",
+                data: [100, 75],
+                backgroundColor: ["#669911", "#119966" ],
+                hoverBackgroundColor: ["#66A2EB", "#FCCE56"]
+            }]
+    };
+
+var MeSeChart = new Chart(MeSeContext, {
+    type: 'horizontalBar',
+    data: MeSeData,
+    options: {
+        scales: {
+            yAxes: [{
+                stacked: true
+            }]
+        }
+
+    }
+});
+</script>
+</body>
+</html>

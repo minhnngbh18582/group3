@@ -68,16 +68,16 @@
             <div class="login-infor-user-name">
                 <p>Oliver Smith</p>
                 <h6>Teacher English</h6>
-            </div>            
+            </div>
         </div>
         <ul>
             <li><a href="./home.html">Home</a></li>
             <li><a href="./start-page.html">Startpage</a></li>
             <li><a href="">Follow</a></li>
-            <li><a href="">Contact</a></li>  
-            <li><a href="./use-detail.html">View Profile</a></li>   
-            <li><a href="./create-docs.html">New Docs</a></li>    
-            <li><a href="">Logout</a></li>         
+            <li><a href="">Contact</a></li>
+            <li><a href="./use-detail.html">View Profile</a></li>
+            <li><a href="./create-docs.html">New Docs</a></li>
+            <li><a href="">Logout</a></li>
         </ul>
     </div>
     <script language="javascript">
@@ -92,7 +92,7 @@
             document.getElementById("navbar-item").style.display = 'block';
         };    
     </script>
-    
+
     <div class="tbody">
         <!-- sitebar category after responsive: sitebar này bt sẽ ẩn sao khi thu nhỏ trang web mới hiện -->
         <div class="tbody-box-responsive">
@@ -161,33 +161,36 @@
                 <div class="modal fade" id="newModal" tabindex="-1" aria-labelledby="newModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="newModalLabel">Create new category</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="form-add" id="content">
-                                    <div class="category-input-name">
-                                        <label for="input-name" class="form-label">Category Name :</label>
-                                        <input class="form-control" type="text" id="cate-name" name="cate-name">
-                                        <p class="error">Error documentation!</p>
-                                    </div>
-                                    <div class="category-input-date">
-                                        <label for="input-date" class="form-label">Category Date :</label>
-                                        <input class="form-control" type="date" id="cate-date" name="cate-date">
+                            <form action="">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="newModalLabel">Create new category</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-add" id="content">
+                                        <div class="category-input-name">
+                                            <label for="input-name" class="form-label">Category Name :</label>
+                                            <input class="form-control" type="text" id="cate-name" name="cate-name">
+                                            <p class="error">Error documentation!</p>
+                                        </div>
+                                        <div class="category-input-date">
+                                            <label for="input-date" class="form-label">Category Date :</label>
+                                            <input class="form-control" type="date" id="cate-date" name="cate-date">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary">Create</button>
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Create</button>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
                 <div class="tbody-category-detail">
-                    <div class="category-item">
+                    <form class="category-item" action="">
                         <h3 id="category-item-name">Book</h3>
                         <div class="form-edit col col-sm-4" id="editItem">
                             <input class="form-control" type="text" id="cate-name" name="cate-name" placeholder="Book">
@@ -199,16 +202,16 @@
                             <input class="category-btn-edit" type="button" id="save" value="Save" />
                             <!--Delete Modal -->
                             <button type="button" class="category-btn-delete" data-bs-toggle="modal"
-                                data-bs-target="#deleteModal">Delete</button>                            
-                        </div>                        
-                        <div class="category-tool-responsive">                            
+                                data-bs-target="#deleteModal">Delete</button>
+                        </div>
+                        <div class="category-tool-responsive">
                             <button class="category-btn-edit" id="edit-responsive"><i class="bi bi-pen"></i></button>
-                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>                            
+                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>
                             <!--Delete Modal -->
                             <button type="button" class="category-btn-delete" data-bs-toggle="modal"
                                 data-bs-target="#deleteModal"><i class="bi bi-trash"></i></button>
                         </div>
-                    </div>
+                    </form>
                     <script language="javascript">
                         document.getElementById("edit").onclick = function () {
                             document.getElementById("editItem").style.display = 'inline-block';
@@ -221,13 +224,13 @@
                             document.getElementById("save").style.display = 'none';
                             document.getElementById("category-item-name").style.display = 'inline-block';
                             document.getElementById("edit").style.display = 'inline-block';
-                        };   
+                        };
                         document.getElementById("edit-responsive").onclick = function () {
                             document.getElementById("editItem").style.display = 'inline-block';
                             document.getElementById("edit-responsive").style.display = 'none';
                             document.getElementById("category-item-name").style.display = 'none';
                             document.getElementById("save-responsive").style.display = 'inline-block';
-                        }; 
+                        };
                         document.getElementById("save-responsive").onclick = function () {
                             document.getElementById("editItem").style.display = 'none';
                             document.getElementById("save-responsive").style.display = 'none';
@@ -262,9 +265,9 @@
                             <button class="category-btn-edit">Edit</button>
                             <button class="category-btn-delete">Delete</button>
                         </div>
-                        <div class="category-tool-responsive">                            
+                        <div class="category-tool-responsive">
                             <button class="category-btn-edit" id="edit-responsive"><i class="bi bi-pen"></i></button>
-                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>                            
+                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>
                             <!--Delete Modal -->
                             <button type="button" class="category-btn-delete" data-bs-toggle="modal"
                                 data-bs-target="#deleteModal"><i class="bi bi-trash"></i></button>
@@ -276,9 +279,9 @@
                             <button class="category-btn-edit">Edit</button>
                             <button class="category-btn-delete">Delete</button>
                         </div>
-                        <div class="category-tool-responsive">                            
+                        <div class="category-tool-responsive">
                             <button class="category-btn-edit" id="edit-responsive"><i class="bi bi-pen"></i></button>
-                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>                            
+                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>
                             <!--Delete Modal -->
                             <button type="button" class="category-btn-delete" data-bs-toggle="modal"
                                 data-bs-target="#deleteModal"><i class="bi bi-trash"></i></button>
@@ -290,9 +293,9 @@
                             <button class="category-btn-edit">Edit</button>
                             <button class="category-btn-delete">Delete</button>
                         </div>
-                        <div class="category-tool-responsive">                            
+                        <div class="category-tool-responsive">
                             <button class="category-btn-edit" id="edit-responsive"><i class="bi bi-pen"></i></button>
-                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>                            
+                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>
                             <!--Delete Modal -->
                             <button type="button" class="category-btn-delete" data-bs-toggle="modal"
                                 data-bs-target="#deleteModal"><i class="bi bi-trash"></i></button>
@@ -304,9 +307,9 @@
                             <button class="category-btn-edit">Edit</button>
                             <button class="category-btn-delete">Delete</button>
                         </div>
-                        <div class="category-tool-responsive">                            
+                        <div class="category-tool-responsive">
                             <button class="category-btn-edit" id="edit-responsive"><i class="bi bi-pen"></i></button>
-                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>                            
+                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>
                             <!--Delete Modal -->
                             <button type="button" class="category-btn-delete" data-bs-toggle="modal"
                                 data-bs-target="#deleteModal"><i class="bi bi-trash"></i></button>
@@ -318,9 +321,9 @@
                             <button class="category-btn-edit">Edit</button>
                             <button class="category-btn-delete">Delete</button>
                         </div>
-                        <div class="category-tool-responsive">                            
+                        <div class="category-tool-responsive">
                             <button class="category-btn-edit" id="edit-responsive"><i class="bi bi-pen"></i></button>
-                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>                            
+                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>
                             <!--Delete Modal -->
                             <button type="button" class="category-btn-delete" data-bs-toggle="modal"
                                 data-bs-target="#deleteModal"><i class="bi bi-trash"></i></button>
@@ -332,9 +335,9 @@
                             <button class="category-btn-edit">Edit</button>
                             <button class="category-btn-delete">Delete</button>
                         </div>
-                        <div class="category-tool-responsive">                            
+                        <div class="category-tool-responsive">
                             <button class="category-btn-edit" id="edit-responsive"><i class="bi bi-pen"></i></button>
-                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>                            
+                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>
                             <!--Delete Modal -->
                             <button type="button" class="category-btn-delete" data-bs-toggle="modal"
                                 data-bs-target="#deleteModal"><i class="bi bi-trash"></i></button>
@@ -346,9 +349,9 @@
                             <button class="category-btn-edit">Edit</button>
                             <button class="category-btn-delete">Delete</button>
                         </div>
-                        <div class="category-tool-responsive">                            
+                        <div class="category-tool-responsive">
                             <button class="category-btn-edit" id="edit-responsive"><i class="bi bi-pen"></i></button>
-                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>                            
+                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>
                             <!--Delete Modal -->
                             <button type="button" class="category-btn-delete" data-bs-toggle="modal"
                                 data-bs-target="#deleteModal"><i class="bi bi-trash"></i></button>
@@ -360,9 +363,9 @@
                             <button class="category-btn-edit">Edit</button>
                             <button class="category-btn-delete">Delete</button>
                         </div>
-                        <div class="category-tool-responsive">                            
+                        <div class="category-tool-responsive">
                             <button class="category-btn-edit" id="edit-responsive"><i class="bi bi-pen"></i></button>
-                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>                            
+                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>
                             <!--Delete Modal -->
                             <button type="button" class="category-btn-delete" data-bs-toggle="modal"
                                 data-bs-target="#deleteModal"><i class="bi bi-trash"></i></button>
@@ -374,9 +377,9 @@
                             <button class="category-btn-edit">Edit</button>
                             <button class="category-btn-delete">Delete</button>
                         </div>
-                        <div class="category-tool-responsive">                            
+                        <div class="category-tool-responsive">
                             <button class="category-btn-edit" id="edit-responsive"><i class="bi bi-pen"></i></button>
-                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>                            
+                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>
                             <!--Delete Modal -->
                             <button type="button" class="category-btn-delete" data-bs-toggle="modal"
                                 data-bs-target="#deleteModal"><i class="bi bi-trash"></i></button>
@@ -388,9 +391,9 @@
                             <button class="category-btn-edit">Edit</button>
                             <button class="category-btn-delete">Delete</button>
                         </div>
-                        <div class="category-tool-responsive">                            
+                        <div class="category-tool-responsive">
                             <button class="category-btn-edit" id="edit-responsive"><i class="bi bi-pen"></i></button>
-                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>                            
+                            <button class="category-btn-edit" id="save-responsive"><i class="bi bi-save"></i></button>
                             <!--Delete Modal -->
                             <button type="button" class="category-btn-delete" data-bs-toggle="modal"
                                 data-bs-target="#deleteModal"><i class="bi bi-trash"></i></button>
