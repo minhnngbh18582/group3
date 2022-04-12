@@ -22,56 +22,33 @@
 
 <body>
     <!-- header navbar -->
-    <div class="header">
-        <div class="header-navbar">
-            <div class="header-left">
-                <ul>
-                    <li><a href="./home.html">Home</a></li>
-                    <li><a href="./start-page.html">Startpage</a></li>
-                    <li><a href="">Follow</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-            <div class="header-middle"><img src="../img/logo.png" alt=""></div>
-            <div class="header-right">
-                <div class="header-search-box">
-                    <input class="search-box" placeholder="Search" />
-                    <button class="search-box-btn" type="submit">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </div>
-                <div class="login-box">
-                    <button><a href="./login.html">Login</a></button>
-                </div>
-                <div class="tbody-responsive-navbar">
-                    <button class="btn btn-secondary" id="navbar-item"><i class="bi bi-list"></i></button>
-                    <button class="btn btn-secondary" id="navbar-item-cancel"><i class="bi bi-list"></i></button>
-                </div>
-            </div>
+    <header>
+        <div class="row">
+          <nav id="navigation">
+            <a href="./home.html" class="logo">Group.3 Ideas</a>
+            <div class="tbody-responsive-navbar">
+                <button class="btn btn-secondary" id="navbar-item"><i class="bi bi-list"></i></button>
+                <button class="btn btn-secondary" id="navbar-item-cancel"><i class="bi bi-x-square"></i></i></button>
+            </div>          
+            <ul class="menu-left">
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./start-page.html">Introduction</a></li>                                     
+                <li><a href="#">Contact</a></li> 
+                <li><a href="./category.html">Category</a></li>
+                <li><button type="button" class="custom-btn btn-12" onclick="location.href='./login.html'"><span>Start!</span><span>Login</span></button></li> 
+            </ul>                       
+          </nav>
         </div>
-    </div>
-    <!-- navbar after responsive -->
-    <div id="navbar-item-detail">
-        <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./start-page.html">Startpage</a></li>
-            <li><a href="">Follow</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="./login.html">Login</a></li>
-        </ul>
-    </div>
-    <script language="javascript">
-        document.getElementById("navbar-item").onclick = function () {
-            document.getElementById("navbar-item-detail").style.display = 'block';
-            document.getElementById("navbar-item-cancel").style.display = 'block';
-            document.getElementById("navbar-item").style.display = 'none';
-        };
-        document.getElementById("navbar-item-cancel").onclick = function () {
-            document.getElementById("navbar-item-detail").style.display = 'none';
-            document.getElementById("navbar-item-cancel").style.display = 'none';
-            document.getElementById("navbar-item").style.display = 'block';
-        };    
-    </script>
+        <div id="navbar-item-detail">
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./start-page.html">Introduction</a></li>                                     
+                <li><a href="#">Contact</a></li> 
+                <li><a href="./category.html">Category</a></li>
+                <li><button type="button" class="custom-btn btn-12" onclick="location.href='./login.html'"><span>Start!</span><span>Login</span></button></li>
+            </ul>
+        </div> 	     
+    </header> 
 
     <div class="tbody">
         <!-- sitebar category after responsive: sitebar này bt sẽ ẩn sao khi thu nhỏ trang web mới hiện -->
@@ -389,7 +366,9 @@
             <p>2022 © All rights reserved. Created by Group3</p>
         </div>
     </div>
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+    <script src="../javascript/script.js"></script>
 </body>
 
 </html>
